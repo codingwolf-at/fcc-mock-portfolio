@@ -3,6 +3,7 @@
 :root {
   --nav-bg-color: #BE3144;
   --primary-bg-color: #272c33;
+  --secondary-bg-color: #45567D;
   --red-text-color: #AA3041;
 }
 
@@ -22,7 +23,7 @@ body {
 }
 
 /* NAVBAR */
-.navbar {
+#navbar {
   height: 12vh;
   width: 100%;
   background-color: var(--nav-bg-color);
@@ -60,6 +61,64 @@ body {
   font-style: italic;
   font-weight: 300;
   font-size: 2rem;
+}
+
+/* PROJECT SECTION */
+#projects {
+  background-color: var(--secondary-bg-color);
+  color: white;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+#project-section-title {
+  font-size: 2.5rem;
+}
+
+#projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.5rem;
+  margin: 3rem 0;
+}
+
+.project-tile {
+  background-color: var(--primary-bg-color);
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+
+.project-tile:hover .symbol {
+  visibility: visible;
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  margin: 1.2rem 0;
+  font-weight: 400;
+}
+
+.symbol {
+  color: var(--red-text-color);
+  visibility: hidden;
+}
+
+#project-section-button {
+  background-color: var(--primary-bg-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-family: inherit;
+  font-size: 1.3rem;
+}
+
+#project-section-button:hover {
+  background-color: var(--nav-bg-color);
 }
 
 /* CONTACT SECTION */
