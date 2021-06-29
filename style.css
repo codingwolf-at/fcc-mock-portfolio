@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+:root {
+  --nav-bg-color: #BE3144;
+  --primary-bg-color: #272c33;
+  --red-text-color: #AA3041;
+}
+
+/* APPLY TO ALL */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 12vh;
+  width: 100%;
+  background-color: var(--nav-bg-color);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-pill {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 2rem 0 0;
+}
+
+/* WELCOME SECTION */
+#welcome-section {
+  height: 100vh;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.main-text {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.secondary-text-2 {
+  color: var(--red-text-color); 
+  font-style: italic;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+/* FOOTER */
+#footer {
+  height: 100vh;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-text-3 {
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+}
